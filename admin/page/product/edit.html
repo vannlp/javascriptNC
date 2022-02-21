@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesom -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../../assets/css/app.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="app-left">
+        <h1 class="heading">Admin</h1>
+        <div class="admin-account">
+          <div class="admin-account-img">
+            <img src="../../assets/img/user2-160x160.jpg" alt="" />
+          </div>
+          <span> Alexander Pierce </span>
+        </div>
+        <div class="left-main">
+          <div class="left-main-div">
+            <a
+              href="../../../site/index.html"
+              style="text-decoration: none; color: white; font-size: 17px"
+              >Trang chủ</a
+            >
+          </div>
+          <div class="left-main-div">
+            <span>Danh mục</span>
+            <button class="left-main-btn">
+              <i class="fas fa-angle-down"></i>
+            </button>
+            <ul class="left-main-list">
+              <li class="left-main-item">
+                <a
+                  href="../../page/categories/create.html"
+                  class="left-main-link"
+                  >Thêm danh mục</a
+                >
+              </li>
+              <li class="left-main-item">
+                <a
+                  href="../../page/categories/index.html"
+                  class="left-main-link"
+                  >Danh sách danh mục</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="left-main-div">
+            <span>Sản phẩm</span>
+            <button class="left-main-btn">
+              <i class="fas fa-angle-down"></i>
+            </button>
+            <ul class="left-main-list">
+              <li class="left-main-item">
+                <a href="../../page/product/create.html" class="left-main-link"
+                  >Thêm sản phẩm</a
+                >
+              </li>
+              <li class="left-main-item">
+                <a href="../../page/product/index.html" class="left-main-link"
+                  >Danh sách sản phẩm</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="left-main-div">
+            <span>Hóa đơn</span>
+            <button class="left-main-btn">
+              <i class="fas fa-angle-down"></i>
+            </button>
+            <ul class="left-main-list">
+              <li class="left-main-item">
+                <a href="../../page/orders/index.html" class="left-main-link"
+                  >Danh sách hóa đơn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="app-right">
+        <h4>Cập nhập sản phẩm</h4>
+        <form>
+          <div class="form-group">
+            <label for="">Tên sản phẩm</label>
+            <input
+              type="text"
+              class="form-control"
+              id="product_name"
+              placeholder="Tên sản phẩm"
+            />
+          </div>
+          <div class="form-group">
+            <label for="">Ảnh sản phẩm</label>
+            <input
+              type="text"
+              class="form-control"
+              id="product_img"
+              placeholder="Tên sản phẩm"
+            />
+          </div>
+          <div class="form-group">
+            <label for="">Tên danh mục sản phẩm</label>
+            <select name="" class="form-control" id="cate-id"></select>
+          </div>
+          <div class="form-group">
+            <label for="">Giá sản phẩm</label>
+            <input
+              type="number"
+              placeholder="Giá sản phẩm"
+              class="form-control"
+              id="product_price"
+            />
+          </div>
+          <div class="form-group">
+            <label for="">Mô tả sản phẩm</label>
+            <textarea
+              name=""
+              id="detail_product"
+              placeholder="Mô tả sản phẩm"
+              cols="30"
+              rows="10"
+              class="form-control"
+            ></textarea>
+          </div>
+          <button type="button" id="btn-submit" class="btn btn-primary">
+            Cập nhập sản phẩm
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/categories.js"></script>
+    <script>
+      $(document).ready(() => {
+        handleShowHide("left-main-list", "left-main-btn");
+
+        function getDataId() {
+          let id = getParameterUrl("id");
+          $.get("http://localhost:3000/products/" + id).done((data) => {
+            $("#product_name").val(data.name);
+            $("#product_img").val(data.image);
+            $.get("http://localhost:3000/categories").done((data2) => {
+              let html = data2
+                .map((value, index) => {
+                  console.log(data.cate_id);
+                  return `
+                <option ${data.cate_id == value.id ? "selected" : ""} value="${
+                    value.id
+                  }">${value.name}</option>
+                `;
+                })
+                .join("");
+
+              $("#cate-id").html(html);
+              $("#product_price").val(data.price);
+              $("#detail_product").text(data.detail);
+            });
+          });
+        }
+
+        function updateProduct(id) {
+          let name = $("#product_name").val();
+          let img = $("#product_img").val();
+          let cate_id = $("#cate-id").val();
+          let price = $("#product_price").val();
+          let detail = $("#detail_product").val();
+
+          $.ajax({
+            method: "PUT",
+            url: "http://localhost:3000/products/" + id,
+            data: {
+              name: name,
+              cate_id: cate_id,
+              price: price,
+              image: img,
+              detail: detail,
+            },
+          }).done(() => {
+            alert("Cập nhập thành công");
+            getDataId();
+          });
+        }
+
+        getDataId();
+
+        $("#btn-submit").click(() => {
+          let id = getParameterUrl("id");
+          updateProduct(id);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesom -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../../assets/css/app.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="app-left">
+        <h1 class="heading">Admin</h1>
+        <div class="admin-account">
+          <div class="admin-account-img">
+            <img src="../../assets/img/user2-160x160.jpg" alt="" />
+          </div>
+          <span> Alexander Pierce </span>
+        </div>
+        <div class="left-main">
+          <div class="left-main-div">
+            <a
+              href="../../../site/index.html"
+              style="text-decoration: none; color: white; font-size: 17px"
+              >Trang chủ</a
+            >
+          </div>
+          <div class="left-main-div">
+            <span>Danh mục</span>
+            <button class="left-main-btn">
+              <i class="fas fa-angle-down"></i>
+            </button>
+            <ul class="left-main-list">
+              <li class="left-main-item">
+                <a
+                  href="../../page/categories/create.html"
+                  class="left-main-link"
+                  >Thêm danh mục</a
+                >
+              </li>
+              <li class="left-main-item">
+                <a
+                  href="../../page/categories/index.html"
+                  class="left-main-link"
+                  >Danh sách danh mục</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="left-main-div">
+            <span>Sản phẩm</span>
+            <button class="left-main-btn">
+              <i class="fas fa-angle-down"></i>
+            </button>
+            <ul class="left-main-list">
+              <li class="left-main-item">
+                <a href="../../page/product/create.html" class="left-main-link"
+                  >Thêm sản phẩm</a
+                >
+              </li>
+              <li class="left-main-item">
+                <a href="../../page/product/index.html" class="left-main-link"
+                  >Danh sách sản phẩm</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="left-main-div">
+            <span>Hóa đơn</span>
+            <button class="left-main-btn">
+              <i class="fas fa-angle-down"></i>
+            </button>
+            <ul class="left-main-list">
+              <li class="left-main-item">
+                <a href="../../page/orders/index.html" class="left-main-link"
+                  >Danh sách hóa đơn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="app-right">
+        <h4>Danh sách danh mục</h4>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>Tên danh mục</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody id="categories-wrapper"></tbody>
+        </table>
+        <script>
+          $(document).ready(() => {
+            function deleteCate(id) {
+              $.ajax({
+                method: "DELETE",
+                url: "http://localhost:3000/categories/" + id,
+              }).done(() => {
+                alert("Xóa danh mục thành công");
+                renderCateList();
+              });
+            }
+
+            function renderCateList() {
+              const categories = document.querySelector("#categories-wrapper");
+
+              $.get("http://localhost:3000/categories").done((data) => {
+                let html = data
+                  .map((value, index) => {
+                    return `
+                    <tr>
+                      <td>${value.id}</td>
+                      <td>${value.name}</td>
+                      <td>
+                        <a href="./edit.html?id=${value.id}" class="btn btn-warning">Edit</a>
+                        <button class="btn btn-danger delete_btn" data-id="${value.id}">Delete</button>
+                      </td>
+                    </tr>
+                  `;
+                  })
+                  .join("");
+
+                categories.innerHTML = html;
+                handleEvenDelete();
+              });
+            }
+
+            function handleEvenDelete() {
+              const btn_delete = document.querySelectorAll(".delete_btn");
+
+              btn_delete.forEach((val, index) => {
+                val.addEventListener("click", () => {
+                  let id = val.dataset.id;
+                  deleteCate(id);
+                });
+              });
+            }
+
+            renderCateList();
+          });
+        </script>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/categories.js"></script>
+    <script>
+      $(document).ready(() => {
+        handleShowHide("left-main-list", "left-main-btn");
+      });
+    </script>
+  </body>
+</html>

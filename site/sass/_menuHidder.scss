@@ -1,0 +1,87 @@
+.menu-hidder{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100px;
+    opacity: 0;
+    visibility: hidden;
+    right: 0;
+    bottom: 0;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.233);
+    transition: all .2s linear;
+    &.action{
+        left: 0;
+        opacity: 1;
+        visibility:visible;
+    }
+    &-list{
+        width: 70%;
+        margin: 0;
+        padding: 0;
+        background-color: #eee;
+        height: 100%;
+        padding-top: 20px;
+    }
+    &-item{
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+        padding-left: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &-icon{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        margin-right: 10px;
+    }
+    &-link{
+        font-weight: 500;
+        color: $text-color;
+    }
+
+    &-list-2{
+        display: block;
+        position: absolute;
+        left: -30px;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-left: 0px;
+        padding-left: 20px;
+        visibility: hidden;
+        opacity: 0;
+        &.action{
+            position:static;
+            left: 0;
+            visibility: visible;
+            opacity: 1;
+            transition: all .5s linear;
+        }
+    }
+
+    &-item-2{
+        padding: 5px 0;
+    }
+    &-link-2{
+        font-weight: 500;
+        color: $text-color;
+    }
+
+    &-close{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .menu-hidder{
+        display: block;
+    }
+}

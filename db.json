@@ -1,0 +1,140 @@
+{
+  "user":[
+    {
+      "id": 1,
+      "username": "phanvan123",
+      "password": "123456"
+    }
+  ],
+
+  "categories": [
+    {
+      "name": "Giáo khoa",
+      "id": 1
+    },
+    {
+      "id": "2",
+      "name": "Tiểu thuyết"
+    },
+    {
+      "id": "3",
+      "name": "Kỹ năng"
+    }
+  ],
+  "products": [
+    {
+      "name": "Giáo Trình Triết Học Mác – Lênin 2",
+      "cate_id": "1",
+      "price": "1000",
+      "image": "https://salt.tikicdn.com/cache/400x400/ts/product/83/f7/1f/0c3a491b7e23820a5907adef10ef8033.jpg.webp",
+      "detail": "Giáo trình do Ban biên soạn gồm các tác giả là nhà nghiên cứu, nhà giáo dục thuộc Viện Triết học - Học viện Chính trị quốc gia Hồ Chí Minh, các học viện, trường đại học, Viện Triết học - Viện Hàn lâm Khoa học xã hội Việt Nam, tổ chức biên soạn trên cơ sở kế thừa những kết quả nghiên cứu trước đây, đồng thời bổ sung nhiều nội dung, kiến thức, kết quả nghiên cứu mới, gắn với công cuộc đổi mới ở Việt Nam, nhất là những thành tựu trong 35 năm đổi mới đất nước",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Tâm Lý Học - Phác Họa Chân Dung Kẻ Phạm Tội",
+      "cate_id": 3,
+      "price": 1000,
+      "detail": "Tội phạm, nhất là những vụ án mạng, luôn là một chủ đề thu hút sự quan tâm của công chúng, khơi gợi sự hiếu kỳ của bất cứ ai. Một khi đã bắt đầu theo dõi vụ án, hẳn bạn không thể không quan tâm tới kết cục, đặc biệt là cách thức và động cơ của kẻ sát nhân, từ những vụ án phạm vi hẹp cho đến những vụ án làm rúng động cả thế giới.",
+      "image": "https://salt.tikicdn.com/cache/400x400/ts/product/e4/a3/52/4845a31ebb7c0b75766ef9272506f236.jpg.webp"
+    },
+    {
+      "id": "4",
+      "name": "Tiếng Anh 7 - Tập 2 - Sách Học Sinh (2021)",
+      "cate_id": "1",
+      "price": "20",
+      "detail": "Sản phẩm bán chạy nhất\tTop 100 sản phẩm Giáo Khoa Lớp 7 bán chạy của tháng\nSách được biên soạn dựa trên cơ sở những kinh nghiệm thực tiễn của việc dạy tiếng Anh trung học phổ thông ở Việt Nam với sự hợp tác chặt chẽ về chuyên môn và kĩ thuật của Tập đoàn Xuất bản Giáo dục Pearson và Hội đồng Anh. Sách giúp học sinh bước đầu hình thành và phát triển năng lực giao tiếp bằng tiếng Anh. Nội dung kiến thức trình bày khoa học từ cơ bản đến nâng cao giúp học sinh rèn luyện, củng cố và nâng cao trình độ hiệu quả.",
+      "image": "https://cdn0.fahasa.com/media/catalog/product/cache/1/small_image/600x600/9df78eab33525d08d6e5fb8d27136e95/i/m/image_233245.jpg"
+    },
+    {
+      "id": "KO4Npw9",
+      "name": "Vật Lí 10 (2021)",
+      "cate_id": "1",
+      "price": "20",
+      "detail": "ádgfkjsdgjksdjkgklsdglk",
+      "image": "https://cdn0.fahasa.com/media/catalog/product/cache/1/small_image/600x600/9df78eab33525d08d6e5fb8d27136e95/i/m/image_242927.jpg"
+    },
+    {
+      "id": "dCixdcI",
+      "name": "Nhà Giả Kim (Tái Bản 2020)",
+      "cate_id": "2",
+      "price": "67000",
+      "detail": "Tiểu thuyết Nhà giả kim của Paulo Coelho như một câu chuyện cổ tích giản dị, nhân ái, giàu chất thơ, thấm đẫm những minh triết huyền bí của phương Đông. Trong lần xuất bản đầu tiên tại Brazil vào năm 1988, sách chỉ bán được 900 bản. Nhưng, với số phận đặc biệt của cuốn sách dành cho toàn nhân loại, vượt ra ngoài biên giới quốc gia, Nhà giả kim đã làm rung động hàng triệu tâm hồn, trở thành một trong những cuốn sách bán chạy nhất mọi thời đại, và có thể làm thay đổi cuộc đời người đọc.",
+      "image": "https://cdn0.fahasa.com/media/catalog/product/cache/1/small_image/600x600/9df78eab33525d08d6e5fb8d27136e95/i/m/image_195509_1_36793.jpg"
+    },
+    {
+      "id": "f2gcNuE",
+      "name": "Bài Tập Tuần Toán Lớp 1 - Tập 2",
+      "cate_id": "1",
+      "price": "38000",
+      "detail": "Bài Tập Toán Lớp 1 - Tập 2 (Cùng Học Để Phát Triển Năng Lực)<br>\n\nCuốn sách giúp học sinh ôn tập, rèn luyện kĩ năng đọc hiểu và làm bài sau giờ học trên lớp.<br>\n\nSách với đáp án giúp phụ huynh và học sinh đối chiếu để tìm ra phương pháp, từ đó rút ra kinh nghiệm, rèn luyện khả năng tự học của học sinh.<br>\n\nDạng bài tập bám sát cấu trúc để thi giúp học sinh ôn tập và rèn luyện để tự tin khi bước vào kì thi.<br>\n\nDòng kẻ ô ly giúp học sinh viết và làm bài thuận tiện. Hỗ trợ phụ huynh tham gia nhóm để giải đáp thắc mắc về bài tập.",
+      "image": "https://cdn0.fahasa.com/media/catalog/product/cache/1/small_image/600x600/9df78eab33525d08d6e5fb8d27136e95/9/7/9786045579367_1_1.jpg"
+    },
+    {
+      "id": "Ip1udJX",
+      "name": "Học Mĩ Thuật 7 (2021)",
+      "cate_id": "1",
+      "price": "27000",
+      "detail": "Bộ sách Học Mĩ thuật theo định hướng phát triển năng lực từ lớp 1 đến lớp 5 được biên soạn nhằm hướng tới mục tiêu lấy học sinh làm trung tâm; kích thích sự tương tác, tư duy sáng tạo và phát triển nhận thức, từ đó giúp các em hình thành và phát triển ba năng lực cốt lõi là:\n\n- Sáng tạo mĩ thuật, qua đó biểu đạt bản thân (suy nghĩ, tình cảm, mong muốn,...).\n\n- Hiểu, cảm nhận và trân trọng sản phẩm/ tác phẩm mĩ thuật.\n\n- Giao tiếp/ trao đổi, tiếp nhận thông tin thông qua sản phẩm/ tác phẩm mĩ thuật.\n\nBộ sách vận dụng các quy trình mĩ thuật theo phương pháp dạy học mới của Dự án ”Hỗ trợ giáo dục Mĩ thuật cấp Tiểu học” (SAEPS) do Vương quốc Đan Mạch tài trợ, được biên soạn theo các chủ đề ở từng khối lớp.\n\nTrong mỗi chủ đề, các em được tiếp cận với kiến thức mĩ thuật thông qua các hoạt động tương tác với giáo viên và với các bạn dưới các hình thức trải nghiệm, thực hành, vận dụng sáng tạo.\n\nPhương pháp dạy học mới giúp học sinh:\n\n- Rèn luyện và phát triển các kĩ năng thực hành mĩ thuật qua việc quan sát, nhớ lại, tưởng tượng trong quá trình học tập các phân môn của chương trình Mĩ thuật hiện hành: Vẽ theo mẫu, Vẽ trang trí, Vẽ tranh, Tập nặn tạo dáng, Thường thức mĩ thuật.\n\n- Sáng tạo linh hoạt trong các cách thể hiện khác nhau cho mỗi chủ đề, tuỳ thuộc vào từng hoàn cảnh và điều kiện của các em.\n\n- Biết cách sử dụng nhiều loại vật liệu để thể hiện các sản phẩm mĩ thuật như: màu vẽ, giấy màu, đất nặn và một số vật liệu tự nhiên sẵn có và dễ tìm,...\n\n- Phát triển tư duy ngôn ngữ, khả năng thuyết trình, nhận xét và đánh giá tác phẩm mĩ thuật.\n\nTrân trọng cảm ơn các nhà khoa học, các thầy cô giáo, các em học sinh đã hỗ trợ chúng tôi tạo sản phẩm trong quá trình biên soạn, hoàn thiện bộ sách này.\n\nVới mong muốn bộ sách ngày càng hoàn thiện trong những lần xuất bản tiếp theo, chúng tôi xin trân trọng đón nhận các ý kiến đóng góp cho bộ sách từ các em học sinh, các thầy cô giáo, các bậc phụ huynh và bạn đọc gần xa.\n\nMã hàng\t9786040253705\nCấp Độ/ Lớp\tLớp 7\nCấp Học\tCấp 2\nNhà Cung Cấp\tCty Sách Giáo Dục Tại TP.HCM\nTác giả\tNhiều Tác Giả\nNXB\tNXB Giáo Dục Việt Nam\nNăm XB\t2021\nTrọng lượng (gr)\t200\nKích Thước Bao Bì\t26 x 19 cm\nSố trang\t80\nHình thức\tBìa Mềm\nVùng - Miền\tMiền Trung\nSản phẩm hiển thị trong\t\nÔng Trùm Trường Học\nBACK TO SCHOOL\nSách Giáo Khoa - Tham Khảo Các Cấp\nSách Giáo Khoa Cấp 2\nSản phẩm bán chạy nhất\tTop 100 sản phẩm Giáo Khoa Lớp 7 bán chạy của tháng\nBộ sách Học Mĩ thuật theo định hướng phát triển năng lực từ lớp 1 đến lớp 5 được biên soạn nhằm hướng tới mục tiêu lấy học sinh làm trung tâm; kích thích sự tương tác, tư duy sáng tạo và phát triển nhận thức, từ đó giúp các em hình thành và phát triển ba năng lực cốt lõi là:<br>\n\n- Sáng tạo mĩ thuật, qua đó biểu đạt bản thân (suy nghĩ, tình cảm, mong muốn,...).<br>\n\n- Hiểu, cảm nhận và trân trọng sản phẩm/ tác phẩm mĩ thuật.<br>\n\n- Giao tiếp/ trao đổi, tiếp nhận thông tin thông qua sản phẩm/ tác phẩm mĩ thuật.",
+      "image": "https://cdn0.fahasa.com/media/catalog/product/cache/1/small_image/400x400/9df78eab33525d08d6e5fb8d27136e95/i/m/image_243209.jpg"
+    },
+    {
+      "id": "eOTt8RH",
+      "name": "Bài Tập Thực Hành Giáo Dục Công Dân 9",
+      "cate_id": "1",
+      "price": "21000",
+      "detail": "Xuất phát từ yêu cầu đổi mới chương trình và phương pháp dạy – học, nâng cao tính chủ động của học sinh trong quá trình học tập và rèn luyện, Công ty Cổ phần Dịch vụ Xuất bản Giáo dục Gia Định – Nhà xuất bản Giáo dục Việt Nam phối hợp với Sở Giáo dục và Đào tạo Thành phố Hồ Chí Minh biên soạn bộ sách BÀI TẬP THỰC HÀNH. Bộ sách được biên soạn bám sát theo chương trình và sách giáo khoa các cấp với đầy đủ các môn Toán, Vật lí, Hoá học, Sinh học, Ngoại ngữ, Ngữ văn, Lịch sử, Địa lí, Giáo dục Công dân.",
+      "image": "https://cdn0.fahasa.com/media/catalog/product/cache/1/small_image/400x400/9df78eab33525d08d6e5fb8d27136e95/i/m/image_195509_1_44984_1.jpg"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "customer_name": "Phan Tuong Van",
+      "customer_address": "Dong Thap",
+      "customer_email": "Phanvan0322@gmail.com",
+      "customer_phone_number": "0123456789",
+      "created_date": "23/1/2022",
+      "status": "Đang chờ duyệt"
+    },
+    {
+      "customer_name": "phanvan0322",
+      "customer_address": "sdl;glsdiglisd",
+      "customer_email": "phanvan123@gmail.com",
+      "customer_phone_number": "0774091026",
+      "created_date": "2/19/2022",
+      "status": "Đang chờ duyệt",
+      "id": 2
+    }
+  ],
+  "orders_details": [
+    {
+      "id": 1,
+      "order_id": 1,
+      "productsId": 3,
+      "quantity": 2,
+      "unit_price": 2000
+    },
+    {
+      "id": 2,
+      "order_id": 1,
+      "productsId": 2,
+      "quantity": 3,
+      "unit_price": 3000
+    },
+    {
+      "order_id": 2,
+      "productsId": "4",
+      "quantity": "1",
+      "unit_price": "20",
+      "id": 3
+    },
+    {
+      "order_id": 2,
+      "productsId": "f2gcNuE",
+      "quantity": "1",
+      "unit_price": "38000",
+      "id": 4
+    }
+  ]
+}

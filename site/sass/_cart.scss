@@ -1,0 +1,64 @@
+.cart-delete{
+    cursor: pointer;
+    padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: rgba(7, 7, 7, 0.123);
+    border-radius: 50%;
+    line-height: 1;
+    color: #ccc;
+    &:hover{
+        color: #333;
+    }
+}
+
+
+
+.table{
+    &-quantily{
+        display: flex;
+        & button{
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        & input{
+            border: 1px solid #ccc;
+            width: 40px;
+        }
+    }
+    &-name{
+        width: 50%;
+    }
+}
+
+tbody>tr{
+    border-bottom: 1px solid #ccc;
+}
+
+tbody>tr>td{
+    border: none;
+}
+
+.cart{
+    &-warpper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-payment{
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+        color: white;
+        background-color: $color-primary;
+        margin-top: 20px;
+        &:hover{
+            color: white;
+            background-color: #b46505;
+        }
+    }
+}
+

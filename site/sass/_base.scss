@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    font-weight: 400;
+    color: $text-color;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+.app{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+@keyframes ani-hide-show{
+    from{
+        transform: translateY(20px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
