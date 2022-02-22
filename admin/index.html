@@ -117,8 +117,24 @@
         </div>
       </div>
       <div class="app-right">
-        <h3>Vui lòng chọn chức năng phía bên trái</h3>
+        <h3>
+          Doanh thu của cửa hàng: <span style="color: red" id="dt"></span> VND
+        </h3>
       </div>
+      <script>
+        $.get("http://localhost:3000/orders_details").done((data) => {
+          let revenue = 0;
+          console.log(data);
+
+          data.forEach((val) => {
+            let sum = Number(val.quantity) * Number(val.unit_price);
+
+            revenue += sum;
+          });
+
+          $("#dt").text(revenue);
+        });
+      </script>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
