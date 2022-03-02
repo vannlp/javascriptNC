@@ -165,6 +165,7 @@
               $.get(
                 `http://localhost:3000/orders_details?order_id=${id}&_expand=products`
               ).done((data) => {
+                console.log(data);
                 let html = `
                     <thead>
                       <tr>

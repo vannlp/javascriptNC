@@ -34,3 +34,42 @@ function getParameterUrl(param) {
   var param = url.searchParams.get(param);
   return param;
 }
+
+function handleLoginUI(linkLogin, linkLogout) {
+  if (sessionStorage["login"]) {
+    let data = JSON.parse(sessionStorage["login"]);
+    let html = `
+    <li class="top-bar-item">
+      Xin chào <b>${data.username}</b>
+    </li>
+    <li class="top-bar-item">
+      /
+    </li>
+    <li class="top-bar-item"  id="logout">
+      Đăng xuất
+    </li>
+    `;
+    $("#login").html(html);
+    logout(linkLogout);
+  } else {
+    let html = `
+    <li class="top-bar-item">
+      <a href="${linkLogin}" class="top-bar-link">
+        Đăng nhập
+      </a>
+    </li>
+    <li class="top-bar-item">/</li>
+    <li class="top-bar-item">
+      <a href="#" class="top-bar-link"> Đăng ký </a>
+    </li>
+    `;
+    $("#login").html(html);
+  }
+}
+
+function logout(linkLogout) {
+  $("#logout").click(() => {
+    sessionStorage.removeItem("login");
+    location.href = linkLogout;
+  });
+}

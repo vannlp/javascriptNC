@@ -120,7 +120,7 @@
                   <i class="fas fa-phone-alt"></i> 0175 216 666
                 </li>
               </ul>
-              <ul class="top-bar-list d-flex">
+              <ul class="top-bar-list d-flex" id="login">
                 <li class="top-bar-item">
                   <a href="#" class="top-bar-link"> Đăng nhập </a>
                 </li>
@@ -511,5 +511,8 @@
     window.onload = () => {
       danhmuc.categoryPage();
     };
+  </script>
+  <script>
+    handleLoginUI("./login.html", "../index.html");
   </script>
 </html>
